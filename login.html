@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Login</title>
+        <link rel="stylesheet"  href="css/login.css" />
+    </head>
+
+    <body>
+
+        <a class="skip-link" href="#conteudo-principal">
+            Ir para o conteúdo principal
+        </a>
+        
+        <header>
+            <nav>
+
+                <h1>Instituto Benjamin Constant</h1>
+                
+                <h2>Curso Técnico em Massoterapia</h2>
+                
+                <div class="containerBaner">
+
+                    <div class="itemBaner">
+                        <img src="Imagens/imagemBaner/imgBanerMasso.jpg" 
+                        alt="A Imagem Mostra Um Ambiente de Massagem." 
+                        width="100%" height="100%"/>
+                    </div>                
+                                                                
+                </div>
+                <br><br>
+                <nav>
+                    <ul class="containerUl">
+                    <li class="itemLiInicial  efeitoItemLi">
+                        <a class="itemTagA" href="index.html" 
+                        target="_self">Página Inicial</a>
+                    </li>
+                    <li class="itemLi  efeitoItemLi">
+                        <a class="itemTagA" href="sobreCurso.html" 
+                        target="_self">Sobre o Curso</a>
+                    </li>                    
+                    <li class="itemLi  efeitoItemLi">
+                        <a class="itemTagA" href="sobreMassoterapia.html" 
+                        target="_self">O que é Massoterapia</a>
+                    </li>                    
+                    <li class="itemLi  efeitoItemLi">
+                        <a class="itemTagA" href="corpoDocente.html" 
+                        target="_self">Corpo Docente</a>
+                    </li>                                             
+                    <li class="itemLi  efeitoItemLi">
+                        <a class="itemTagA" href="contato.html" 
+                        target="_self">Contato</a>
+                    </li>                           
+                    <li class="itemLi  efeitoItemLi">
+                        <a class="itemTagA" href="videoApresentacao.html" 
+                        target="_self">Vídeo de Apresentação</a>
+                    </li>                                         
+                    <li class="itemLiLogin  efeitoItemLi">
+                        <a class="itemTagA" href="login.html" 
+                        target="_self">Login</a>
+                    </li>                
+                </ul>                  
+                
+            </nav>
+        </header>     
+
+        <main id="conteudo-principal">
+        
+            <h3>Página de Login</h3>
+
+            <h4>Faça Seu Login:</h4>
+            
+            <form id="formLogin" class="centralForm">
+                <div>
+                    <label for="txtEmail">* E-mail: </label>
+                    <br>
+                    <input type="email" id="txtEmail" />
+                </div>
+                <br>
+                <div>
+                    <label for="txtSenha">* Senha: </label>
+                    <br>
+                    <input type="password" id="txtSenha" />
+                    
+                </div>            
+                <br>         
+                <div>
+                    <button type="submit"  class="btnEntrar">Entrar</button>
+                </div>
+                <div>
+
+                    <button type="button" id="toggleSenha"  class="btnMostrar">Mostrar</button>
+                </div>
+                <br>
+                <!--<div>
+                    <a href="areaRestrita.html"></a>
+                </div> -->
+            </form>
+            <br>
+            <!--<hr/>-->
+            
+            <div id="divMensagem" role="alert" 
+            aria-live="assertive"  class="msg"></div>
+            
+            
+            <div class="voltarTopo">
+                <button class="btnVoltarTopo" id="btnVoltarTopo"
+                title="Voltar para o topo">Topo</button>
+            </div>
+
+        </main>
+
+        <!--"hr"Fubção Cria uma Linha Horizontal no Código-->
+        <hr>
+        <footer>
+            
+            <div class="containerAltoral"> 
+                <p class="altoral">&copy;
+                    Instituto Benjamin Constant 2025/2026               
+                </p>
+            </div>
+            
+            <div class="containerLinkDev">
+                <a class="linkDev"  href="desenvolvedores.html">
+                    Site Desenvolvido pela Turma 2024 (IBC) Acesse             
+                </a>
+            </div>
+                       
+            
+        </footer> 
+
+    </body>    
+
+    <script type="module" src="dist/login.js"></script>
+
+    <script type="module" src="dist/voltarTopo.js"></script>
+    
+</html>
