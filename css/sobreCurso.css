@@ -15,32 +15,41 @@ body{
 html, body{
     /*Retira o Balancinho Horizontal do Codigo*/
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 
 
 
-
+/*Skip-Link*/
 
 /* Esconder o link da tela por padrão, mas mantém acessível para leitores de tela */
 .skip-link {
     position: absolute;
-    top: -100px;
-    left: 2.5rem;
+    top: -9999px;
+
+    /*Sobrepoe o Link sobre outro Elemento*/
+    z-index: 100;
+
+    /*Estilo do Botão*/
+    margin-left: 2.5rem;
+    margin-top: 0.7rem;
     background: #0056b3; /* Cor forte que combine com o design */
     color: white;
-    padding: 10px 20px;
-    z-index: 100;
+    padding: 10px 20px;   
     text-decoration: none;
     font-weight: bold;
-    border-radius: 0 0 5px 5px;
-    transition: top 0.2s ease;
+    border-radius: 5px;
+
+    /*Transição do Botão*/
+    transition: top 0.2s ease-in-out;
 }
 
 /* Mostra o link no topo da tela quando ele recebe o foco do teclado (Tab) */
 .skip-link:focus {
-    top: 10px;
+    top: 0;
     outline: 2px solid #ffcc00; /* Destaque visual */
+    
 }
 
 
