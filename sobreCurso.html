@@ -12,73 +12,86 @@
         <a class="skip-link" href="#conteudo-principal">
             Ir para o conteúdo principal
         </a>
-        
-        <header>
-            <nav>
-                <h1>Instituto Benjamin Constant</h1>
-                
-                <h2>Curso Técnico em Massoterapia</h2>
-                
-                <div class="containerBaner">
 
-                    <div class="itemBaner">
-                        <img src="Imagens/imagemBaner/imgBanerMasso.jpg" 
-                        alt="A Imagem Mostra Um Ambiente de Massagem." 
-                        width="100%" height="100%"/>
-                    </div>                
-                                                                
-                </div>
-                <br><br>
-                <div>
-                    <ul class="containerUl">
-                    <li class="itemLiInicial  efeitoItemLi">
-                        <a class="itemTagA" href="index.html" 
-                        target="_self">Página Inicial</a>
-                    </li>
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="sobreCurso.html" 
-                        target="_self">Sobre o Curso</a>
-                    </li>                    
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="sobreMassoterapia.html" 
-                        target="_self">O que é Massoterapia</a>
-                    </li>                    
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="corpoDocente.html" 
-                        target="_self">Corpo Docente</a>
-                    </li>                                             
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="contato.html" 
-                        target="_self">Contato</a>
-                    </li>                           
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="videoApresentacao.html" 
-                        target="_self">Vídeo de Apresentação</a>
-                    </li>                                         
-                    <li class="itemLiLogin  efeitoItemLi">
-                        <a class="itemTagA" href="login.html" 
-                        target="_self">Login</a>
-                    </li>                
-                </ul>                                                   
-                    
-                </div> 
-            </nav>
-        </header>    
-    
+        <div class="container-switch">
+                <label class="switch" for="theme-toggle">
+                    <span id="switch-label">Modo Escuro</span>
+                    <input type="checkbox"
+                           id="theme-toggle"
+                           role="switch"
+                           aria-labelledby="switch-label"
+                           aria-checked="false">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+
+    <header>
+
+        <div class="containerBaner">
+
+            <div class="itemBaner">
+                <img src="Imagens/imagemBaner/imgBanerMasso.jpg" alt="A Imagem Mostra Um Ambiente de Massagem, onde a parede tem um dizer 
+                    'Massoterapia arte do toque e bem estar', tem uma maca com toalhas dobradas 
+                    sobre ela uma prateleira com frascos de óleos" . width="100%" height="100%" />
+            </div>
+
+
+        </div>
+        
+        <nav aria-label="Menu Principal">
+            <ul class="containerUl">
+                <li class="itemLiInicial  efeitoItemLi">
+                    <a class="itemTagA" href="index.html" 
+                    target="_self">Página Inicial</a>
+                </li>
+
+                <li class="itemLi  efeitoItemLi">
+                    <a class="itemTagA" href="sobreCurso.html" target="_self">Sobre o Curso</a>
+                </li>
+
+                <li class="itemLi  efeitoItemLi">
+                    <a class="itemTagA" href="sobreMassoterapia.html" target="_self">O que é Massoterapia</a>
+                </li>
+
+                <li class="itemLi  efeitoItemLi">
+                    <a class="itemTagA" href="corpoDocente.html" target="_self">Corpo Docente</a>
+                </li>
+
+                <li class="itemLi  efeitoItemLi">
+                    <a class="itemTagA" href="contato.html" target="_self">Contato</a>
+                </li>
+
+                <li class="itemLi  efeitoItemLi">
+                    <a class="itemTagA" href="videoApresentacao.html" target="_self">Vídeo de Apresentação</a>
+                </li>
+
+                <li class="itemLiLogin  efeitoItemLi">
+                    <a class="itemTagA" href="login.html" target="_self">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+        
+          <h2>Instituto Benjamin Constant</h2>        
+
+        <h1>Curso Técnico em Massoterapia</h1>
+
+    </header>
+
         <main id="conteudo-principal">            
 
-            <h3>Página Sobre o Curso de Massoterapia</h3>
-
-            <h4>Conheça o Curso:</h4>
+            <h3>Conheça um Pouco Mais Sobre o Curso de Massoterapia</h3>
+            
 
             <div class="containerParagrafo">
 
                 <section>                  
 
-                    <h5>
+                    <h4>
                         Breve Histórico do Curso de 
                         Massoterapia no Instituto Benjamin Constant:
-                    </h5>
+                    </h4>
                     
                     <p>
                         Com o objetivo de proporcionar a qualificação ou requalificação profissional e a inserção ou reinserção 
@@ -138,12 +151,13 @@
                     </p>
 
                 </section>
+                <br><br><br>
 
                 <section>
                         
-                    <h5>
+                    <h4>
                         Algumas informações sobre a estrutura e funcionamento do Curso Técnico em  Massoterapia do Instituto Benjamin Constant:
-                    </h5>
+                    </h4>
                     
                     <p>
                         O Curso Técnico em Massoterapia do IBC é oferecido para promover a educação profissionalizante de pessoas com deficiência visual 
@@ -175,12 +189,7 @@
                     <button class="btnVoltarTopo" id="btnVoltarTopo"
                     title="Voltar para o topo">Topo</button>
                 </div>
-
-                <div class="centerModoEscuro">
-                    <button id="toggle-btn">
-                        Alterar Modo Escuro
-                    </button>
-                </div>
+                
 
         </main>
 
@@ -207,7 +216,7 @@
 
     <script type="module" src="dist/voltarTopo.js"></script>
     
-    <script type="module" src="modoEscuro.js"></script> 
+    <script type="module" src="dist/modoEscuro.js"></script>
         
         
         
