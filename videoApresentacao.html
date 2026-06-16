@@ -10,67 +10,90 @@
     <body>
 
         <a class="skip-link" href="#conteudo-principal">
-            Ir para o conteúdo principal
-        </a>        
+            Ir Para o Conteúdo Principal
+        </a>
+
+        <div class="container-switch">
+                <label class="switch" for="theme-toggle">
+                    <span id="switch-label">Modo Escuro</span>
+                    <input type="checkbox"
+                           id="theme-toggle"
+                           role="switch"
+                           aria-labelledby="switch-label"
+                           aria-checked="false">
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+
+    <header>
+
+        <div class="containerBaner">
+
+            <div class="itemBaner">
+                <img src="Imagens/imagemBaner/imgBanerMasso.jpg" alt="A Imagem Mostra Um Ambiente de Massagem, onde a parede tem um dizer 
+                    'Massoterapia arte do toque e bem estar', tem uma maca com toalhas dobradas 
+                    sobre ela uma prateleira com frascos de óleos" . width="100%" height="100%" />
+            </div>
+
+
+        </div>
         
-        <header>
-            <nav>
+        <nav aria-label="Menu Principal">
+            <ul class="containerUl">
+                <li class="itemLiPaginaInicial">
+                    <a class="itemTagPaginaInicial  efeitoItemTagPaginaInicial" 
+                    href="index.html" 
+                    target="_self">Página Inicial</a>
+                </li>
 
-                <h1>Instituto Benjamin Constant</h1>
-                
-                <h2>Curso Técnico em Massoterapia</h2>
-                
-                <div class="containerBaner">
+                <li class="itemLi">
+                    <a class="itemTagLi  efeitoItemTagLi" 
+                        href="sobreCurso.html" target="_self">
+                        Sobre o Curso
+                    </a>
+                </li>
 
-                    <div class="itemBaner">
-                        <img src="Imagens/imagemBaner/imgBanerMasso.jpg" 
-                        alt="A Imagem Mostra Um Ambiente de Massagem." 
-                        width="100%" height="100%"/>
-                    </div>                
-                                                                
-                </div>
-                <br><br>
-                <nav>
-                    <ul class="containerUl">
-                    <li class="itemLiInicial  efeitoItemLi">
-                        <a class="itemTagA" href="index.html" 
-                        target="_self">Página Inicial</a>
-                    </li>
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="sobreCurso.html" 
-                        target="_self">Sobre o Curso</a>
-                    </li>                    
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="sobreMassoterapia.html" 
-                        target="_self">O que é Massoterapia</a>
-                    </li>                    
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="corpoDocente.html" 
-                        target="_self">Corpo Docente</a>
-                    </li>                                             
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="contato.html" 
-                        target="_self">Contato</a>
-                    </li>                           
-                    <li class="itemLi  efeitoItemLi">
-                        <a class="itemTagA" href="videoApresentacao.html" 
-                        target="_self">Vídeo de Apresentação</a>
-                    </li>                                         
-                    <li class="itemLiLogin  efeitoItemLi">
-                        <a class="itemTagA" href="login.html" 
-                        target="_self">Login</a>
-                    </li>                
-                </ul>                                                   
-                    
-                </nav> 
-            </nav>
-        </header>   
+                <li class="itemLi">
+                    <a class="itemTagLi  efeitoItemTagLi" 
+                    href="sobreMassoterapia.html" target="_self">O que é Massoterapia</a>
+                </li>
+
+                <li class="itemLi">
+                    <a class="itemTagLi  efeitoItemTagLi" 
+                    href="corpoDocente.html" target="_self">Corpo Docente</a>
+                </li>
+
+                <li class="itemLi">
+                    <a class="itemTagLi  efeitoItemTagLi" 
+                    href="contato.html" target="_self">Contato</a>
+                </li>
+
+                <li class="itemLi">
+                    <a class="itemTagLi  efeitoItemTagLi" 
+                    href="videoApresentacao.html" target="_self">Vídeo de Apresentação</a>
+                </li>
+
+                <li class="itemLiLogin">
+                    <a class="itemTagLogin  efeitoItemTagLogin" href="login.html" target="_self">Login</a>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="containerTitulos">
+            <h1>Curso Técnico em Massoterapia</h1>
+
+            <h2>Instituto Benjamin Constant</h2>
+        </div>
+        
+
+    </header> 
 
         <main id="conteudo-principal">
         
-            <h3>Página Vídeo de Apresentação Sobre o Curso</h3>
+            <h3>Vídeo de Apresentação</h3>
             
-            <h4>Assista o Vídeo:</h4>
+            <h4>Assista o Vídeo do Curso:</h4>
             
             <div>
                     
@@ -111,6 +134,8 @@
         
     </body>
 
-    <script type="module" src="dist/voltarTopo.js"></script>        
+    <script type="module" src="dist/voltarTopo.js"></script>
+    
+    <script type="module" src="dist/modoEscuro.js"></script>
 
 </html>

@@ -55,8 +55,6 @@ html, body{
 
 
 
-
-
 /*Mpdp Escuro*/
 /* ==========================================================================
    CONFIGURAÇÃO DE ACESSIBILIDADE E VARIÁVEIS - MODO ESCURO (FIXO)
@@ -151,12 +149,15 @@ input:checked + .slider:before {
 
 
 
+
 /*Titulos*/
-h1{   
+h1{
+    color: #586927;       
     font-size: 2.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
-    margin-bottom: 4rem;
-    text-align: center;
+    margin-bottom: 0rem;
+    margin-left: 4rem;
+    text-align: left;
    
 }
 
@@ -165,12 +166,22 @@ h1{
 
 h2{    
     
-    font-size: 1.75rem; 
+    font-size: 2rem;
+    color: #586927;   
+    font-weight: 600;
     font-family: Verdana, Geneva, Tahoma, sans-serif;    
     margin-bottom: 0.5rem;
-    text-align: center;       
+    margin-left: 4rem;
+    text-align: left;       
 
 
+}
+
+
+.containerTitulos{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4rem;
 }
 
 
@@ -178,42 +189,53 @@ h2{
 h3{   
     
     font-size: 1.75rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;     
-    margin-bottom: 3rem;   
-    text-align: center; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #191970;         
+    margin-bottom: 3rem;
+    margin-left: 4rem;   
+    text-align: left;
 
 }
 
 h4{
     font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;       
-    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4a4a4a;      
+    text-align: center;
+
     margin-bottom: 2rem;
     margin-left: 4rem;
+    
+
 }
 
 h5{
-    font-size: 1.25rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-size: 1.25em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #4a3525;     
     text-align: left;
-    margin-bottom: 3rem;
-    margin-left: 4rem;
+    margin-left: 4rem;    
+    margin-bottom: 2rem;
+    
+    
 }
+
+
 
 
 
 
 
 /*Baner*/
-.containerBaner{
+.containerBaner{ 
     display: flex;
     justify-content: center;
     align-items: center;    
     
     margin-top: 0rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
 
-    /*Propriedade Imagem Não Destorcer*/
+    /*Propriedade Faz Imagem Não Destorcer*/
     object-fit: cover;
 
     /*background-image: "imagem/fotoMasso1.jpd";*/
@@ -236,10 +258,18 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 1.5rem;
-    row-gap: 2rem;
-    list-style-type: none;    
-    margin-bottom: 3.5rem;
+    align-content: center;
+    column-gap: 1.2rem;
+    row-gap: 0.7rem;
+
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    
+    
+       
+    
 
     flex-wrap: wrap;
     /*Propriedade Quebra para a Outra Linha*/
@@ -250,60 +280,135 @@ h5{
 }
 
 
-.itemLiInicial{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background: blue;     
-    border-radius: 7px; 
-    padding: 10px 10px;  
+.itemLiPaginaInicial{
+    list-style-type: none; 
+  /*display: inline-block;*/
 
-    transition: backgroud-color 0.3s; 
 }
 
 
-.itemLiLogin{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    background: gray; 
-    border-radius: 7px; 
-    padding: 10px 10px;  
+.itemTagPaginaInicial{
+    display: inline-block;
 
-    transition: backgroud-color 0.3s; 
-}
-
-
-
-.itemLi{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: blueviolet;
+    color: green;
+    border: 2px solid green;
     border-radius: 7px;
-    padding: 10px 10px;   
-
-    transition: backgroud-color 0.3s; 
-}
-
-
-.itemTagA{
-    color: white; 
     font-size: 1.1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;         
-    text-decoration: none;     
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+    text-decoration: none;
+    transition: transform 0.3s ease;  /*, backgroud-color 0.3s ease*/
+    padding: 5px 10px;
+
+    
+
+    
+         
                   
 }
 
 /*Efeito Botão Menu*/
-.efeitoItemLi:hover{
-    background-color: black;        
-    transform: scale(1.15);    
-    padding: 10px 10px;       
+.efeitoItemTagPaginaInicial:hover{
+    transform: scale(1.2);    
+    padding: 5px 10px; 
+
+    outline: 4px solid greenyellow;
+
+    outline-offset: 2.5px;
+    border-radius: 7px;  
+     
+        
 }
+
+
+
+
+
+
+
+/*Botão Menu Login*/
+.itemLiLogin{
+    list-style-type: none;
+
+}
+
+
+.itemTagLogin{
+    display: inline-block;
+
+    color: coral; 
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold; 
+
+    text-decoration: none;    
+    transition: transform 0.3s ease;
+    padding: 5px 10px;
+
+    
+    border: 2px solid coral;
+    border-radius: 7px;
+    
+                  
+}
+
+/*Efeito Botão Menu*/
+.efeitoItemTagLogin:hover{           
+    transform: scale(1.2);    
+    padding: 5px 10px; 
+
+    outline: 4px solid gold;
+    border-radius: 7px;
+
+    outline-offset: 2.5px;
+
+    
+
+}
+
+
+
+
+
+/*Botão Menu Li*/
+.itemLi{
+    list-style-type: none;
+    
+    
+}
+
+
+
+.itemTagLi{
+    display: inline-block;    
+
+    color: blue; 
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    
+            
+    text-decoration: none; 
+    transition: transform 0.3s ease;
+    padding: 5px 10px; 
+    
+    
+                  
+}
+
+/*Efeito Botão Menu*/
+.efeitoItemTagLi:hover{           
+    transform: scale(1.2);
+    color: red;     
+    
+
+    text-shadow: 1px 0px 0px currentColor, 0px 1px 0px currentColor, 
+    0px 0px 1px currentColor;   
+    
+}
+
+
+
 
 
 
@@ -313,37 +418,130 @@ h5{
 
 /*Paragrafo*/
 .containerParagrafo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-bottom: 5rem;   
+    display: block;
+    margin: 0 auto;
     
+    max-width: 70%;
+    margin-bottom: 4rem
+     
 }
 
-.itemParagrafo{
-    width: 60%;
-    height: auto;
-    padding: 0rem;
+
+.itemParagrafo{  
+
     
-    border: 0px solid black;   
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 3.5rem;
+    /*Cria Espassamentos entre Linhas do Texto*/
+    line-height: 1.5;
+
+    /*Quebra Palavras para Caber na Caixa*/
+    overflow-wrap: break-word;      
 }
 
 p{
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
 
-    text-align: justify;   
-    text-indent: 3.5rem;
-
-    /*Cria Espassamentos entre Linhas do Texto*/
-    line-height: 1.5;
-
-    /*Quebra Palavras para Caber na Caixa*/
-    overflow-wrap: break-word;    
-        
 }
+
+
+
+
+
+
+/*Botão Voltar Topo*/
+.btnVoltarTopo{
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    z-index: 99999;
+
+    border: 3px solid red;   
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    /*border: none;*/
+    cursor: pointer;
+    border-radius: 50px;
+    text-align: center;
+    padding: 12px 2px;
+       
+    
+}
+
+
+
+/*.voltarTopo{
+    display: flex;
+    justify-content: left;
+    
+    margin-bottom: 2.5rem;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    
+    position: fixed;
+    bottom: 7rem;
+    right: 3rem;
+    z-index: 9999;
+}*/
+
+
+
+
+
+
+
+
+/*Imagens do Perfil*/
+.centerItemImagensPerfil{ 
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+    margin-bottom: 4rem;
+
+    flex-wrap: wrap;
+    /*flex-wrap: wrap;
+    Propriedade Quebra para a Outra Linha*/
+    
+}
+
+
+
+.itemImagensPerfil{
+    border: px solid black;    
+    height: 10rem;
+    width: 10rem;
+    flex-shrink: 0;
+    aspect-ratio: 16/9;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+.legendaImagensPerfil{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 10rem;
+    height: auto;
+    text-align: center;
+
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -351,12 +549,17 @@ p{
 .containerFotosAlunos{ 
     display: flex;
     flex-direction: row;    
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    column-gap: 2rem;
-    row-gap: 3rem;
-    margin-bottom: 5rem;
-    width: 100%;
+
+    column-gap: 1rem;    
+    row-gap: 2rem;
+    
+    
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 2.5rem;
     
     
     /*flex-wrap: wrap;
@@ -370,12 +573,12 @@ p{
 
 .itemFotosAlunos{
     border: 0px solid black;    
-    height: 12rem;
-    width: 13rem;
+    height: 10rem;
+    width: 11rem;
     flex-shrink: 0;
     
     aspect-ratio: 16/9;
-    margin-left: 4rem;
+    
     
 }
 
@@ -389,10 +592,14 @@ p{
     flex-direction: row;    
     justify-content: left;
     align-items: center;
-    column-gap: 2rem;
-    row-gap: 3rem;
-    margin-bottom: 5rem;
-    width: 100%;
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 4rem;
+    
     
     
     flex-wrap: wrap;
@@ -410,68 +617,12 @@ p{
     flex-shrink: 0;
 
     aspect-ratio: 16/9;
-    margin-left: 4rem;    
+    
+
 }
 
 
 
-
-
-
-/*Imagens do Perfil*/
-.containerImagensPerfil{    
-       
-    width: 65%;
-    margin: auto;
-    margin-bottom: 5rem;      
-    
-    
-    /*flex-wrap: wrap;
-    Propriedade Quebra para a Outra Linha*/
-    
-    
-}
-
-
-
-.centerItemImagensPerfil{
-    width: 100%;
-    height: auto;
-    border: 0px  solid  black;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    column-gap: 2rem;
-    row-gap: 5rem;
-    margin-bottom: 0rem;
-    
-}
-
-
-
-.itemImagensPerfil{
-    border: 1px solid black;    
-    height: 12rem;
-    width: 12rem;
-    flex-shrink: 0;
-    aspect-ratio: 16/9;
-    margin-bottom: 1rem;
-    
-}
-
-
-
-.legendaImagensPerfil{
-    font-size: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 12rem;
-    height: auto;
-    text-align: center;
-
-    
-}
 
 
 
@@ -481,10 +632,14 @@ p{
     flex-direction: row;    
     justify-content: left;
     align-items: center;
-    column-gap: 1.5rem;
-    row-gap: 3rem;
+
+    column-gap: 1rem;
+    row-gap: 2rem;
+
+    margin-left: 4rem;
+    margin-right: 4rem;
     margin-bottom: 6rem;
-    width: 100%;   
+       
     flex-wrap: wrap;
     /*Propriedade Quebra para a Outra Linha*/
     
@@ -496,14 +651,15 @@ p{
 .itemCuriosidades{
     border: 1px solid black; 
     height: 10rem;
-    width: 18rem;
-    flex-shrink: 0;
-    aspect-ratio: 16/9;
-    margin-left: 4rem;
-    margin-bottom: 1rem;
+    width: 16.5rem;
 
-    
+    flex-shrink: 0;
+    aspect-ratio: 16/9;    
 }
+
+
+
+
 
 
 .legendaCuriosidades{
@@ -511,11 +667,15 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
             
     text-align: center;
-    width: 18rem;
+    width: 16.5rem;
     height: auto;
-    margin-left: 4rem;
 
-    
+    /*Limita o Texto em Duas Linhas
+    Adicionando Reticências*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 
 
 }
@@ -524,31 +684,6 @@ p{
 
 
 
-
-
-/*Botão Voltar Topo*/
-.btnVoltarTopo{        
-    background-color: red;
-    color: white;
-    font-size: 0.7rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-    text-align: center;
-    padding: 17px 8px;
-       
-    
-}
-
-
-.voltarTopo{
-    display: flex;
-    justify-content: left;
-    margin-bottom: 2.5rem;
-    margin-top: 10rem;
-    margin-left: 4rem;
-}
 
 
 
