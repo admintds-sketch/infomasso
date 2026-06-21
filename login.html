@@ -96,25 +96,27 @@
             
             <form id="formLogin" class="centralForm">
                 <div>
-                    <label for="txtEmail">* E-mail: </label>
-                    <br>
-                    <input type="email" id="txtEmail" />
-                </div>
-                <br>
-                <div>
-                    <label for="txtSenha">* Senha: </label>
-                    <br>
-                    <input type="password" id="txtSenha" />
+                    <label for="txtEmail">* E-mail:</label>
                     
-                </div>            
-                <br>         
+                    <input class="inputEmail" type="email" id="txtEmail" />
+                </div>                
+                
+
+                <div class="containerSenha">
+
+                    <label class="labelSen" for="txtSenha">* Senha:</label>
+                    
+                    <input class="inputSenha" type="password" id="txtSenha" /> 
+                    <button type="button" id="toggleSenha"  class="btnMostrar">Mostrar</button>                        
+
+                    
+                </div>               
+                
+                        
                 <div>
                     <button type="submit"  class="btnEntrar">Entrar</button>
                 </div>
-                <div>
-
-                    <button type="button" id="toggleSenha"  class="btnMostrar">Mostrar</button>
-                </div>
+                
                 <br>
                 <!--<div>
                     <a href="areaRestrita.html"></a>
